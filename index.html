@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta content="ie=edge" http-equiv="x-ua-compatible">
+	<title>Major Picks</title>
+	<meta content="" name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- Favicon -->
+	<link href="favicon.ico?" rel="shortcut icon" type="image/x-icon">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styles/major-styles.css" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.2/tabletop.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="js/majors.js"></script>
+
+</head>
+
+<body id="majors">
+
+
+
+	<header>
+		<div id="scrollArea">
+			<div class="navarea">
+				<a data-scroll href="#majors"><img  src="img/tiger3w.svg" height="40"/><span>MAJOR PICKS</span></a>
+				<a data-scroll href="#leaderboard">LEADERBOARD</a>
+				<a data-scroll href="#bonuses">Bonus Picks</a>
+				<a data-scroll href="#season">Season Standings</a>
+				<a data-scroll href="#rules">Rules</a>
+			</div>
+			<div class="scrollBox"></div>
+		</div>
+	</header>
+
+<div class="wrapper">
+	<section id="leaderboard">
+		<h1>Leaderboard</h1>
+		<div class="leaderboard"></div>
+	</section>
+	<section id="bonuses">
+		<h1>Bonus Picks</h1>
+		<div class="bonusBoxes">
+			<div class="bonusBox"><div class="bonusHeader">WORST TOP 10<span class="actual"></span></div><table class="bonusW"></table></div>
+			<div class="bonusBox"><div class="bonusHeader">BEST BOTTOM 50</div><table class="bonusB"></table></div>
+			<div class="bonusBox"><div class="bonusHeader">TIGER IN TOP 20</div><table class="bonusT"></table></div>
+			<div class="bonusBox"><div class="bonusHeader">PREVIOUS MAJOR WINNER</div><table class="bonusM"></table></div>
+			<div class="bonusBox"><div class="bonusHeader">PICKED WINNER</div><table class="bonusWin"></table></div>
+			<div class="bonusBox"><table class=""></table></div>
+		</div>
+	</section>
+	<section id="season">
+		<h1>Season Standings</h1>
+		<div class="seasonStandings"><div class="seasonTable"><table class="season"></table></div></div>
+	</section> 
+	<section id="rules">
+		<h1>Rules</h1>
+		<div class="rulesBox">
+			<ol>
+				<li>Each team is made up of five players.</li>
+				<li>Players are selected from the top 100 players in the field of each tournament.</li>
+				<li>Each team can select any five players from the top 100; there is no quota for high or low ranked paleyrs.</li>
+				<li>Players are ranked by the Sagarin Rankings. These are more reflective of recent play than the World Golf Rankings.</li>
+				<li>Each players gets a bonus value. The value is determined by their ranking. The top ten players get zero, the next ten get minus-one, the next ten get minus-two, and so on. The largest bonus for any player is minus-nine.</li>
+				<li>The goal of the game is to have the lowest score at the end of the tournament.</li>
+				<li>Each team's score consists of the sum of its two best scores, plus any bonuses that Team has won.</li>
+				<li>There are no tiebreakers.</li>
+				<li>Good luck!</li>
+			</ol>
+		</div>
+	</section> 
+</div>
+</body>
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+		offset: function () {
+			return 124;
+		},
+	});
+</script>
+
+</html>
